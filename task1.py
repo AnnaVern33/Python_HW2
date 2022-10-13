@@ -10,11 +10,14 @@ number = str(num)
 x = number.split(".")
 a = int(x[0]) # целая часть числа
 b = int(x[1]) #  дробная часть числа
-c = a + b
-print(c)
-sum = 0
-while (c != 0):  
-    sum = sum + c % 10
-    c = c // 10
-print("Сумма цифр в числе равна: ", sum)
+
+
+sum1 = 0
+while (a != 0):  
+    sum1 = sum1 + a % 10
+    a = a // 10
+while (b != 0):  
+    sum1 = sum1 + b % 10
+    b = b // 10
+print("Сумма цифр в числе равна: ", sum1)
 
